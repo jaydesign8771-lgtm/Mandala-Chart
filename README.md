@@ -12,7 +12,9 @@
 ## 如何使用
 
 在线使用：https://mandalachart.vercel.app
+
 本地使用：下载项目后，双击 `曼陀罗九宫格.html` 在本地使用。
+
 
 ## PWA 安装
 
