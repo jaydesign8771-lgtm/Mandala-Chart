@@ -4,20 +4,14 @@
 
 它基于曼陀罗九宫格方法，把年度目标拆成 8 个领域、64 个具体行动，并加入「今日唯一」「随机抽取」「低能任务」「番茄钟」「优先级复盘」等功能，帮助用户降低启动阻力、减少选择压力，把计划真正落到每天可执行的小任务上。
 
-## 在线使用
+<img width="891" height="1109" alt="image" src="https://github.com/user-attachments/assets/ad05287c-70c3-4214-ba72-fa26fa166944" />
 
-打开网页即可使用：
+<img width="889" height="1178" alt="image" src="https://github.com/user-attachments/assets/20c74c6c-abb5-44f3-ade6-80a1573a7c6d" />
 
-https://jaydesign8771-lgtm.github.io/-/
 
-如果你不希望公开链接里出现 GitHub 用户名，推荐绑定一个包含 `MandalaChart` 的自定义域名，例如：
+## 如何使用
 
-- `mandalachart.app`
-- `mandalachart.cn`
-- `my-mandalachart.com`
-- `mandalachart.tools`
-
-也可以下载项目后，双击 `曼陀罗九宫格.html` 在本地使用。
+下载项目后，双击 `曼陀罗九宫格.html` 在本地使用。
 
 ## PWA 安装
 
