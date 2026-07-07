@@ -3,6 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#3f8b4d">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="MandalaChart">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
 <title>曼陀罗九宫格</title>
 <style>
 /* ── reset ── */
@@ -1154,6 +1159,9 @@ applyT(S.theme||'pk');
 document.getElementById('htitle').textContent=S.title||'开始布局 2026';
 document.getElementById('hbadge').textContent=S.badge||'用一年时间彻底改变自己';
 buildGrid();
+if('serviceWorker' in navigator){
+  window.addEventListener('load',function(){navigator.serviceWorker.register('./sw.js');});
+}
 </script>
 </body>
 </html>

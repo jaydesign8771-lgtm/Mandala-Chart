@@ -10,7 +10,20 @@
 
 https://jaydesign8771-lgtm.github.io/-/
 
+如果你不希望公开链接里出现 GitHub 用户名，推荐绑定一个包含 `MandalaChart` 的自定义域名，例如：
+
+- `mandalachart.app`
+- `mandalachart.cn`
+- `my-mandalachart.com`
+- `mandalachart.tools`
+
 也可以下载项目后，双击 `曼陀罗九宫格.html` 在本地使用。
+
+## PWA 安装
+
+项目已支持 PWA。网页打开后，可以在浏览器菜单中选择「添加到桌面」「安装应用」或「添加到主屏幕」。
+
+安装后它会像一个轻量 App 一样运行，并支持基础离线访问。
 
 ## 核心功能
 
@@ -27,6 +40,7 @@ https://jaydesign8771-lgtm.github.io/-/
 - 主题切换：支持绿色、蓝色、粉色、灰色、暗色等主题。
 - 图片/SVG 导出：可将当前九宫格保存为图片或 SVG。
 - 备份/导入：支持 JSON 备份与恢复。
+- PWA 安装：支持添加到桌面或手机主屏幕。
 
 ## 设计亮点
 
@@ -53,15 +67,34 @@ https://jaydesign8771-lgtm.github.io/-/
 
 GitHub Pages 推荐设置：
 
+- Source: GitHub Actions
+
+仓库中已包含 `.github/workflows/pages.yml`，推送到 `main` 后会自动发布。
+
+如果你使用分支发布，也可以选择：
+
 - Source: Deploy from a branch
 - Branch: `main`
-- Folder: `/root`
+- Folder: `/(root)`
+
+## 自定义域名
+
+购买域名后，在 GitHub 仓库的 `Settings → Pages → Custom domain` 中填入域名。
+
+确认域名可用后，再在项目根目录添加 `CNAME` 文件，内容只写域名本身，例如：
+
+```txt
+mandalachart.app
+```
 
 ## 本地文件
 
 - `index.html`：网页入口，会自动跳转到主页面。
 - `曼陀罗九宫格.html`：主应用文件。
 - `html2canvas.min.js`：图片导出依赖。
+- `manifest.webmanifest`：PWA 配置。
+- `sw.js`：离线缓存用的 Service Worker。
+- `icon.svg`：PWA 图标。
 - `.nojekyll`：避免 GitHub Pages 处理静态文件时产生路径问题。
 
 ## 适合人群
